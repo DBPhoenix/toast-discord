@@ -1,0 +1,1 @@
+This is a real simple Discord Bot in Type Script made for a fun project in gymnasium.

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Toast, Deluxe",
+    "emoji": "1️⃣",
+    "price": 6,
+    "description": "What a great Toast!"
+  },
+  {
+    "name": "Toast, Cheeser",
+    "emoji": "2⃣",
+    "price": 8,
+    "description": "Double Cheese!"
+  },
+  {
+    "name": "Toast, Skinker",
+    "emoji": "3⃣",
+    "price": 9,
+    "description": "Double Skinke!"
+  },
+  {
+    "name": "Toast, Cheese",
+    "emoji": "4⃣",
+    "price": 4,
+    "description": "Only cheese."
+  }
+]
