@@ -83,6 +83,8 @@ export default {
         Toasts.forEach((toast) => {
           msg.react(toast.emoji);
         });
+
+        msg.react('❌');
       });
 
     copy = new MessageEmbed(embed);

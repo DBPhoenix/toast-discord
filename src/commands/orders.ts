@@ -22,15 +22,15 @@ export default {
 
     const sessionData: SessionData = await keyv.get(guildId);
 
-    Object.entries(sessionData.orders).forEach(([emoji, customers]) => {
-      const toastName = Toasts.find((toast) => toast.emoji === emoji)?.name;
+    const toastNames: {
+      [emoji: string]: string;
+    } = {};
 
-      if (!toastName) {
-        throw Error();
-      }
+    Toasts.forEach((toast) => toastNames[toast.emoji] = toast.name);
 
-      Object.entries(customers).forEach(([displayName, amount]) => {
-        description += `\n- ${amount}x ${toastName}, ${displayName}`;
+    Object.entries(sessionData.orders).forEach(([displayName, orders]) => {
+      Object.entries(orders).forEach(([emote, amount]) => {
+        description += `\n- ${amount}x ${toastNames[emote]}, ${displayName}`;
       });
     });
 
